@@ -86,7 +86,7 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('../img/header-bg.jpg');
+    background-image: url('../img/product-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -119,7 +119,7 @@ body{
      font-size: 1.5rem;
      margin-top: 2rem;
      color: #f7f7f7;
-     font-weight: 400;
+     font-weight: 500;
      line-height: 1.4;
      text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
@@ -420,6 +420,101 @@ footer .credit a {
 
 
 /* Shop Page */
+.Hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    position: relative;
+}
+
+.Hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+}
+
+.Hero .content-pro {
+    padding: 1.4rem;
+    max-width: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produk {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: #fff;
+    padding: 4rem 7% 2rem;
+    position: relative;
+}
+
+.produk .pro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.produk .pro {
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 20px;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.produk .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.produk .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.produk .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+.produk .pro .des span {
+    color: #606063;
+    font-size: 13px;
+}
+
+.produk .pro .des h5 {
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+.produk .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+.produk .pro .cart {
+    position: absolute;
+    bottom: 20px;
+    right: 23px;
+}
 
 
 /* Media Queries */
